@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Layout>
+	<Layer Script="assets/title/scene.lua">
+		<Image Source="assets/title/title-bg.jpg" Anchor="0.5, 0.5" Position="50%, 40%" Assign="bg" />
+		<Mask Color="00000080" Anchor="0.5, 1" Position="50%, 90%" Size="280, 180">
+			<Mask Color="ffffff80" Anchor="0.5, 0.5" Position="50%, 35%" Size="80%, 28" Assign="icon" />
+			<Label Font="assets/res/方正兰亭细黑.ttf:26" Color="ffffff" Text="开始游戏" Anchor="0.5, 0.5" Position="50%, 35%" Assign="start" />
+			<Label Font="assets/res/方正兰亭细黑.ttf:26" Color="ffffff" Text="系统设置" Anchor="0.5, 0.5" Position="50%, 65%" Assign="option" />
+		</Mask>
+	</Layer>
+</Layout>

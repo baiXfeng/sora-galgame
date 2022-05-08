@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Layout>
+	<Layer Script="assets/story/scene.lua">
+		<Image Source="assets/story/bg.png" Anchor="0.5, 0.5" Position="50%, 50%" Assign="bg" />
+		<Image Source="assets/story/npc.png" Anchor="0.5, 0" Position="50%, 10%" Assign="npc" />
+		<Image Source="assets/story/text_box.png" Anchor="0, 1" Position="0, 100%" Assign="textbox">
+			<Label Font="assets/res/方正兰亭细黑.ttf:24" Color="ff0000" Text="【索拉】" Position="25%, 20%" />
+    		<Label Font="assets/res/方正兰亭细黑.ttf:26" Color="ffffff" Text="………………" Position="25%, 35%" />
+		</Image>
+	</Layer>
+</Layout>
