@@ -12,11 +12,12 @@ function animation( self )
 	self:runAction(scale)
 	self:runAction(rotate)
 
-	self:setRenderTarget(true)
 	self:setScale({x=0.01, y=0.01})
 	self:setPosition({x=480, y=272})
 	self:setAnchor({x=0.5, y=0.5})
 	self:setRotation(0)
+	self:setRenderTarget(true)
+	self:setVisible(true)
 end
 
 function init( self )
@@ -31,7 +32,13 @@ function init( self )
 
 	c.se = Sound("assets/res/sound.wav")				-- 加载音效
 
-	animation( self )
+	--animation( self )
+
+	self:runAction( action.Steps(
+		action.Delay(0.03),
+		action.Callback(animation, self)
+	))
+	self:setVisible(false)
 end
 
 function release( self )
